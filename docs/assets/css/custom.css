@@ -1,0 +1,15 @@
+/**
+ * custom
+ * place custom style in this file
+ * add !important to the end if no effect
+ * e.g. color: #fff !important;
+ * --------------------------------------------------
+ *
+ */
+
+.site-bg-overlay {
+  background: -webkit-radial-gradient(ellipse at bottom, rgba(107, 121, 138, 0.75) 0%, rgba(19, 20, 23, 0.75) 80%);
+  background: -o-radial-gradient(bottom, ellipse, rgba(107, 121, 138, 0.75) 0%, rgba(19, 20, 23, 0.75) 80%);
+  background: radial-gradient(ellipse at bottom, rgba(107, 121, 138, 0.3) 0%, rgba(19, 20, 23, 0.3) 80%);
+  background-color: rgba(19, 20, 23, 0.3);
+}

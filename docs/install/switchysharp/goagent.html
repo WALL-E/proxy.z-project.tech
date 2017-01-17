@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>goagent 代理使用 - SwitchySharp - Google Chrome 代理管理扩展程序</title>
+    <meta name="keywords" content="SwitchySharp 下载, SwitchySharp 插件, SwitchySharp 配置, SwitchySharp 教程, chrome 代理, goagent 代理, shadowsocks 代理"/>
+    <meta name="description" content="SwitchySharp 是 Google Chrome 浏览器上的一个代理管理扩展程序，目前最好用的代理程序。"/>
+    <link rel="Shortcut Icon" href="favicon.ico" />
+	<link href="static/css/uikit.min.css" rel="stylesheet" />
+	<script src="static/js/jquery-2.1.1.min.js"></script>
+	<script src="static/js/uikit.min.js"></script>
+    <script src="static/js/addons/sticky.js"></script>
+    <style>
+        .uk-panel-box {
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-1-1">
+                    <h1 class="uk-heading-large">SwitchySharp</h1>
+                    <p class="uk-text-large">SwitchySharp 是 Google Chrome 浏览器上的一个代理管理扩展程序，目前最好用的代理程序。</p>
+                </div>
+            </div>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-3-4">
+                    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- SwitchySharp_728x90 -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-3311201164217163"
+                         data-ad-slot="1223341332"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <h2 id="goagent">GoAgent 代理使用</h2>
+                    <p>goagent 可以去官方下载 <a href="https://code.google.com/p/goagent/">https://code.google.com/p/goagent/</a> 程序。
+                    
+                    <h4>1. 申请Google App Engine并创建appid</h4>
+                    <div class="uk-panel uk-panel-box">
+                        <p>1. 申请注册一个Google App Engine账号https://appengine.google.com。没有Gmail账号先注册一个， 用你的Gmaill账号登录。</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-panel-box">
+                        <p>2. 登录之后，自动转向Application注册页面，如下图：</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-panel-box">
+                        <p>3. 接下来的页面，输入你的手机号码，需要注意的是，手机号码前面要+86（中国区号） 格式如：+86 13888888888。</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-3.jpg" alt="">
+                        </div>
+                        <p>然后等待收取手机短信，收到短信后（一串数字号码）填入下图表单，点send提交.（有的手机收不到信息，解决办法：详细教程 到https://appengine.google.com/waitlist/sms_issues 提交该情况，一个工作日就能收到谷歌提示Google App Engine成功开通）。</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-panel-box">
+                        <p>4. 提交完成之后，GAE账号即被激活，然后就可以创建新的应用程序了。转入“My Applications”页面，点击“Create an Application”新建应用</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-5.jpg" alt="">
+                        </div>
+                        <p>一个Gmail账户最多可以创建十个GAE应用，每个应用每天1G免费流量。这里我们只创建一个应用就可以了。进入下一步，填写新应用的必要信息，如下图。在图中第一处添加一个应用名称，如abc555,验证一下是否可用，如果显示“Yes”那么abc555就是你的Appid（记住这个id），而abc555.appspot.com就是你的应用服务器地址了。第二个空可随便填，点击Create Application按钮提交</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-6.jpg" alt="">
+                        </div>
+                        <p>提交之后，就能看到下图这个页面，就说明你已经成功创建了一个新的应用,你也可以点击应用名称，进入控制面板进行管理。</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-7.jpg" alt="">
+                        </div>
+                        <p class="uk-text-primary">如果你要建立多个appid，只需要从步骤4开始再重复操作多次就行了。</p>
+                    </div>
+
+                    <h4>2. 下载goagent并上传至Google App Engine</h4>
+                    <div class="uk-panel uk-panel-box">
+                        <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- SwitchySharp_468x60 -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:468px;height:60px"
+                             data-ad-client="ca-pub-3311201164217163"
+                             data-ad-slot="1432828934"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <p>1. 下载goagent并解压，<a href="https://code.google.com/p/goagent/">https://code.google.com/p/goagent/</a></p>
+                        <p>
+                            2. 编辑local\proxy.ini，把其中appid = goagent中的goagent 改成你之前申请的应用的appid (用windows的记事本也可以），
+                               如果要使用多个appid，appid之间用|隔开，如：appid1|appid2|appid3，每个appid必须确认上传成功才能使用
+                        </p>
+                        <code>                        
+                        [gae] <br>
+                        appid = appid1|appid2|appid3 <br>
+                        </code>
+
+                        <p>3. 运行goagent.exe</p>
+                        <p>4. 上传</p>
+                        <p>Windows用户：双击server文件夹下的upload.bat，输入你上步创建的appid（同时上传多appid在appid之间用 | 隔开,一次只能上传同一个谷歌帐户下的appid）填完按回车。根据提示填你的谷歌帐户邮箱地址，填完按回车。根据提示填你的谷歌帐户密码(注意：如果开启了两步验证，密码应为 <a href="https://accounts.google.com/b/0/IssuedAuthSubTokens">16位的应用程序专用密码</a>而非谷歌帐户密码，否则会出现AttributeError: can't set attribute错误），填完按回车。如果要上传多个谷歌帐户下的appid，先上传一个账号的，传完一个账号后删除uploader.bat同目录下的.appcfg_cookies文件再传另一个</p>
+
+                        <p>Linux/Mac OSX用户上传方法：在server目录下执行：python uploader.zip</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-8.jpg" alt="">
+                        </div>
+
+                        <p>
+                        如遇到getaddrinfo failed，error10054，Error 10061 目标计算机积极拒绝等错误而不能上传，可以先运行goagent.exe(要先修改appid)再运行uploader.bat 
+                        </p>
+                        <p>上传成功就会看图下图界面</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-9.jpg" alt="">
+                        </div>                        
+                    </div>
+
+                    <h4>3. 运行客户端</h4>
+                    <div class="uk-panel uk-panel-box">
+                        <p>1. Windows用户运行local文件夹中的goagent.exe， Linux/Mac OSX用户运行 proxy.py</p>
+                        <p>
+                            设置浏览器或其他需要代理的程序代理地址为127.0.0.1:8087 <br>
+                            注意：使用过程中要一直运行goagent.exe/proxy.py <br>
+                            代理地址127.0.0.1:8087；如需使用PAC，设置pac地址为http://127.0.0.1:8086/proxy.pac
+                        </p>
+                        <p>2. 导入证书</p>
+                        <p>IE/Chrome：使用管理员身份运行goagent.exe会自动向系统导入IE/Chrome的证书，你也可以双击local文件夹中的CA.crt安装证书（需要安装到“受信任的根证书颁发机构”）</p>
+                        <div class="uk-thumbnail">
+                            <img src="static/img/goagent-10.jpg" alt="">
+                            <img src="static/img/goagent-11.jpg" alt="">
+                        </div>
+                        <p>下一步 -> 完成 -> 确定</p>
+
+                        <p>Firefox：需要单独导入证书，打开FireFox->选项->高级->加密->查看证书->证书机构(必须是这项)->导入证书, 选择local\ca.crt, 勾选所有项，导入；</p>
+                        <p>opera：导入证书方法：首选项→高级→安全性→管理证书→证书颁发机构(必须是这项)->导入->选择local\ca.crt文件->依次确认；</p>
+                        <p class="uk-text-primary">注意：请勿重复安装证书</p>
+
+                        <p>其他客户端选择</p>
+                        <p>
+                        OS X  <a href="https://github.com/ohdarling/GoAgentX" target="_blank">GoAgentX</a><br>
+                        </p>
+                    </div>
+
+                    <h2 id="about">关于</h2>
+                    <p>一个 SwitchySharp 的介绍、使用教程的网站。</p>
+                </div>
+                <div class="uk-width-medium-1-4">
+
+                    <div class="uk-panel">
+                        <ul class="uk-panel-box uk-nav uk-nav-side" data-uk-sticky="{top:35}" style="padding: 15px 0;">
+                            <li class="uk-nav-header">安装介绍</li>
+                            <li><a href="index.html">介绍</a></li>
+                            <li><a href="install.html">下载安装</a></li>
+                            <li><a href="setting.html">配置</a></li>
+                            <li class="uk-nav-header">代理使用</li>
+                            <li class="uk-active"><a href="goagent.html">GoAgent</a></li>
+                            <li><a href="shadowsocks.html">Shadowsocks</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="goagent.html#about"><i class="uk-icon-info-circle uk-margin-small-right"></i>关于</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="uk-panel uk-panel-box" data-uk-sticky="{top:355}" style="padding: 3px 0 0 0;text-align: center;">
+                            <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- SwitchySharp_250x250 -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:250px;height:250px"
+                                 data-ad-client="ca-pub-3311201164217163"
+                                 data-ad-slot="1001406134"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9e91c93b70457092a760bc583b55ca0c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>
