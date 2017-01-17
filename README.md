@@ -28,3 +28,15 @@
     * ADSL用户(拥有外网IP)
     * 机房用户(拥有外网IP)
     * NAT用户(需要隧道协议)
+
+# 用法
+用户只需要设置一次代理即可, 用户手册请访问[http://z-project.tech](http://z-project.tech)
+* http
+  * 主机名 http.z-project.tech
+  * 端口号 8080
+* https
+  * 主机名 https.z-project.tech
+  * 端口号 8443
+* sock5
+  * 主机名 sock5.z-project.tech
+  * 端口号 1080
