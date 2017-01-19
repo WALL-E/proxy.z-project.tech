@@ -29,6 +29,13 @@
     * 机房用户(拥有外网IP)
     * NAT用户(需要隧道协议)
 
+# 优先级
+本项目完成的优先级
+
+1. http
+2. sock5
+3. https(Just a plan)
+
 # 用法
 用户只需要设置一次代理即可, 用户手册请访问[http://z-project.tech](http://z-project.tech)
 * http
