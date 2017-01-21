@@ -1,4 +1,4 @@
-# z-project
+# proxy.z-project.tech
 ```
 天空没有留下翅膀的痕迹，但我已经飞过
 ```
@@ -37,7 +37,7 @@
 3. https(Just a plan)
 
 # 用法
-用户只需要设置一次代理即可, 用户手册请访问[http://z-project.tech](http://z-project.tech)
+用户只需要设置一次代理即可, 用户手册请访问[proxy.z-project.tech](proxy.z-project.tech)
 * http
   * 主机名 http.z-project.tech
   * 端口号 8080
